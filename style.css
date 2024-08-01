@@ -1,0 +1,137 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.container {
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    /* font-family: Arial, sans-serif; */
+    /* Set gradient background */
+    background: linear-gradient(45deg,#0d7620, #072b41);
+    /* For additional browser support */
+    /* background-image: -webkit-linear-gradient(top left, #1145e1, #080d28); */
+    /* background-image: -moz-linear-gradient(top left, #000000, #5e5eff);
+    background-image: -o-linear-gradient(top left, #668aff, #8e5eff); */
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
+.main{
+    border:1px solid #2d2d2d;
+    padding :20px;
+    width: 300px;
+    background-color: rgb(200, 186, 159);
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #170707;
+    border-radius: 10prgb(192, 164, 22);
+    background-color: rgb(210, 243, 136);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      margin-top: 10px;
+}
+#tasks{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      margin-top: 5px;
+      cursor:pointer;
+  }
+  
+  .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+ul{
+    margin-top:10px;
+}
+ul li{
+    margin-top:5px;
+    /* padding-left: 20px; */
+    list-style-type: none;
+    font-size: 17px;
+    padding: 0px 8px 12px 50px;
+    cursor:pointer;
+    user-select: none;
+    position:relative;
+}
+
+ul li::before{
+    content:'';
+    height: 28px;
+    width:28px;
+    /* border-radius: 50%; */
+    position:absolute;
+    background-image: url('uncheck.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat ;
+    left:-10px;
+}
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+    content:'';
+    
+    background-image: url('check.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat ;
+    left:-10px;
+    width:100px;
+    height: 100px;
+    /* border-radius: 100%; */
+    /* overflow: hidden; */
+}
+ul li span{
+  position: absolute;
+  right:0;
+
+}
